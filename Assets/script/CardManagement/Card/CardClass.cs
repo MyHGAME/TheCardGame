@@ -23,7 +23,7 @@ public enum CardFlipState{
 	Down,
 }
 //
-//卡的基类,包含卡的基本功能--翻牌，加入手牌，送进弃牌区，使用手牌，
+//卡的基类,包含卡的基本功能--翻牌，加入手牌，送进弃牌区，使用手牌(用字符串包含使用效果的函数名称，字符串映射函数，映射使用效果名称：召唤等
 //包含效果功能，使用效果功能，判断使用效果条件，出场条件功能,卡的时点，卡位关联，关于属性的功能，ui关联
 //单位卡类，包含单位卡的基本功能--攻击，移动，
 //技能卡类,技能卡类型：辅助型，普通型，反击型，装备型，辅助型：翻开就出场，条件不满足失去效力，永久在场
@@ -42,6 +42,22 @@ public class CardClass : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void TurnOverCard() {
+
+	}
+
+	public void JoinHands() {
+
+	}
+
+	public void JoinDiscardArea() {
+
+	}
+
+	public void UseCard() {
+
 	}
 
 }

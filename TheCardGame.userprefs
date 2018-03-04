@@ -1,17 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\HandCard.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\CardManagement\Card\CardClass.cs">
     <Files>
-      <File FileName="Assets\script\Card.cs" Line="244" Column="1" />
-      <File FileName="Assets\script\GameMethod.cs" Line="27" Column="1" />
-      <File FileName="Assets\script\CardManagement\CardArrayManagement\CardArray.cs" Line="32" Column="1" />
-      <File FileName="Assets\script\CardManagement\CardBaseManagement\CardBaseInfor.cs" Line="5" Column="1" />
-      <File FileName="Assets\script\CardManagement\CardBehavior\CardBehaviorInfor.cs" Line="1" Column="19" />
-      <File FileName="Assets\script\CardManagement\CardDescription\CardDescripte.cs" Line="2" Column="1" />
-      <File FileName="Assets\script\CardManagement\EditCard\CardEditManage.cs" Line="2" Column="19" />
-      <File FileName="Assets\script\CardManagement\EffectController\TheEffectComtroller.cs" Line="1" Column="19" />
-      <File FileName="Assets\script\CardManagement\Card\CardClass.cs" Line="48" Column="1" />
-      <File FileName="Assets\script\HandCard.cs" Line="45" Column="22" />
+      <File FileName="Assets\script\CardManagement\Card\CardClass.cs" Line="52" Column="3" />
+      <File FileName="Assets\script\Card.cs" Line="65" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

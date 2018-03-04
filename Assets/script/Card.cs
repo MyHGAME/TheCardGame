@@ -40,14 +40,16 @@ public class Card : MonoBehaviour {
 		InExtraDeck,
 		InHand,
 	}
-	public enum CardState{
+	public enum CardState
+	{
 		Up,
 		Down,
 	}
 	public enum CardAttackState
-   {     Can,
+    {    Can,
 		 CanNot,
-		}
+	}
+
 	public CardState MyCardState=CardState.Down;
 	public MoveAbility MyMove=MoveAbility.CanNot;
 	public CardPosition MyCardPosion=CardPosition.InMainDeck;
