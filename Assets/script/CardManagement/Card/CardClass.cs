@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //卡的类型，空，陷阱卡，技能卡，单位卡，英雄卡（应该将单位卡与英雄卡归类）
-public enum Type{
+public enum CardType{
 	None,
 	Prop,
 	Skill,
@@ -11,6 +11,7 @@ public enum Type{
 }
 //卡的位置,在场上，在主卡组，在额外卡组，在手牌，在弃牌区（需要继续细分，分对方与我方的位置？）
 public enum CardLocation{
+	None,
 	InPlay,
 	InMainDeck,
 	InExtraDeck,
@@ -19,8 +20,23 @@ public enum CardLocation{
 }
 //卡的翻转状态
 public enum CardFlipState{
+	None,
 	Up,
 	Down,
+}
+
+public class Pos{
+	float PosX;
+	float PosY;
+	int MapX;
+	int MapY;
+
+	public Pos(){
+		PosX = 0;
+		PosY = 0;
+		MapX = 0;
+		MapY = 0;
+	}
 }
 //
 //卡的基类,包含卡的基本功能--翻牌，加入手牌，送进弃牌区，使用手牌(用字符串包含使用效果的函数名称，字符串映射函数，映射使用效果名称：召唤等
@@ -33,12 +49,27 @@ public enum CardFlipState{
 //单位卡：有生命值，能量值，经验值（英雄卡），等级，攻击力，防御力，行动力（速度）
 //技能卡、陷阱卡：名字的右边是技能卡的类型图标，在效果的上方说明卡的类型，
 public class CardClass : MonoBehaviour {
-	
+
+	public CardType CardType = CardType.None;
+	public CardLocation CardLocation = CardLocation.None;
+	public CardFlipState CardFlipState = CardFlipState.None;
+	public int CardNumber = 0;
+	public string CardName = "";
+	public string CardBackResource = "", CardFrontResource = "";
+	private Sprite CardBack = null, CardFront = null;
+	public GameObject CardPosObj = null;
+	//翻转卡牌的参数
+	public float RockTimer = 0,MaxRockTime = 0;
+	public float CardActionSpeed = 0;
 	// Use this for initialization
 	void Start () {
 		
 	}
+
+	private void InitRockParame() {
 	
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
