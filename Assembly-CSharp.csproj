@@ -45,37 +45,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\script\AddCardButton.cs" />
-     <Compile Include="Assets\script\BattleManager.cs" />
-     <Compile Include="Assets\script\Card.cs" />
-     <Compile Include="Assets\script\CardAttack.cs" />
-     <Compile Include="Assets\script\CardManagement\Card\CardClass.cs" />
-     <Compile Include="Assets\script\CardManagement\CardArrayManagement\CardArray.cs" />
-     <Compile Include="Assets\script\CardManagement\CardBaseManagement\CardBaseInfor.cs" />
-     <Compile Include="Assets\script\CardManagement\CardBehavior\CardBehaviorInfor.cs" />
-     <Compile Include="Assets\script\CardManagement\CardDescription\CardDescripte.cs" />
-     <Compile Include="Assets\script\CardManagement\CardEffect\CardEffect.cs" />
-     <Compile Include="Assets\script\CardManagement\EditCard\CardEditManage.cs" />
-     <Compile Include="Assets\script\CardManagement\EffectController\TheEffectComtroller.cs" />
-     <Compile Include="Assets\script\CardMove.cs" />
-     <Compile Include="Assets\script\CardPos.cs" />
-     <Compile Include="Assets\script\Choice.cs" />
-     <Compile Include="Assets\script\DamagePhase.cs" />
-     <Compile Include="Assets\script\DrawCard.cs" />
-     <Compile Include="Assets\script\GameManager.cs" />
-     <Compile Include="Assets\script\GameMethod.cs" />
-     <Compile Include="Assets\script\HandCard.cs" />
-     <Compile Include="Assets\script\MainCamera.cs" />
-     <Compile Include="Assets\script\MapManager.cs" />
-     <Compile Include="Assets\script\MethodManager.cs" />
-     <Compile Include="Assets\script\PhaseManagement\PhaseManagement.cs" />
-     <Compile Include="Assets\script\UI\UIManagement.cs" />
+     <Compile Include="Assets\Resources\Scripts\AddCardButton.cs" />
+     <Compile Include="Assets\Resources\Scripts\BattleManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Card.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardAttack.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\Card\CardClass.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\CardArrayManagement\CardArray.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\CardBaseManagement\CardBaseInfor.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\CardBehavior\CardBehaviorInfor.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\CardDescription\CardDescripte.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\CardEffect\CardEffect.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\EditCard\CardEditManage.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardManagement\EffectController\TheEffectComtroller.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\CardPos.cs" />
+     <Compile Include="Assets\Resources\Scripts\Choice.cs" />
+     <Compile Include="Assets\Resources\Scripts\DamagePhase.cs" />
+     <Compile Include="Assets\Resources\Scripts\DrawCard.cs" />
+     <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\GameMethod.cs" />
+     <Compile Include="Assets\Resources\Scripts\HandCard.cs" />
+     <Compile Include="Assets\Resources\Scripts\MainCamera.cs" />
+     <Compile Include="Assets\Resources\Scripts\MapManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\PhaseManagement\PhaseManagement.cs" />
+     <Compile Include="Assets\Resources\Scripts\UI\UIManagement.cs" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{11590A4A-023E-CCE5-2C99-06A3E911F681}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

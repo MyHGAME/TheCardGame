@@ -26,10 +26,12 @@ public enum CardFlipState{
 }
 
 public class Pos{
-	float PosX;
-	float PosY;
-	int MapX;
-	int MapY;
+	//场上位置
+	public float PosX;
+	public float PosY;
+	//数组位置
+	public int MapX;
+	public int MapY;
 
 	public Pos(){
 		PosX = 0;
@@ -60,7 +62,11 @@ public class CardClass : MonoBehaviour {
 	public GameObject CardPosObj = null;
 	//翻转卡牌的参数
 	public float RockTimer = 0,MaxRockTime = 0;
+	//卡活动速度包括各种移动,利用itween插件
 	public float CardActionSpeed = 0;
+	//字符串哈希表储存技能函数名称，技能名称
+	public Dictionary<string,string> Skill = new Dictionary<string, string>();
+
 	// Use this for initialization
 	void Start () {
 		
@@ -73,6 +79,14 @@ public class CardClass : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void BeClick() {
+	
+	}
+
+	public void BeClick(int BehaviourState) {
+	
 	}
 
 	public void TurnOverCard() {
