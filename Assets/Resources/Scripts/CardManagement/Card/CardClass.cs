@@ -104,5 +104,5 @@ public class CardClass : MonoBehaviour {
 	public void UseCard() {
 
 	}
-
+		
 }

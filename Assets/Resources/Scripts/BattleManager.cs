@@ -5,6 +5,8 @@ public class BattleManager : MonoBehaviour {
 	public GameObject CardArrayPos;
 	public ArrayList MyCardArray=new ArrayList();
 	public float CardDis=0.1f;
+	public GameObject SelectedCard;
+
 	// Use this for initialization
 	void Start () {
 		LoadCardArray ();
